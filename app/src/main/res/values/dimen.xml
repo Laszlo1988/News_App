@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="general_padding_margin_small">8dp</dimen>
+    <dimen name="header">15sp</dimen>
+
+</resources>
