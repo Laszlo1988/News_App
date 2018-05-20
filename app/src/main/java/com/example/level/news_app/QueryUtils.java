@@ -208,10 +208,10 @@ public final class QueryUtils {
                 //Create a slice of the String value bodyTextSummary.
                 String textSummarySlice;
 
-                if (bodyTextSummary.length() < 120) {
+                if (bodyTextSummary.length() < 200) {
                     textSummarySlice = latestBody.getString("bodyTextSummary");
                 } else {
-                    textSummarySlice = bodyTextSummary.substring(0,120);
+                    textSummarySlice = bodyTextSummary.substring(0,200);
                 }
 
                 // Create a JSONObject for the key "publishedDate" in from the "latestBody"
@@ -233,7 +233,7 @@ public final class QueryUtils {
                         //Create a JSONObject from the item found in "tags".
                         tagsItem = tags.getJSONObject(j);
 
-                        author += "#" + tagsItem.getString("webTitle");
+                        author += " #" + tagsItem.getString("webTitle");
                         }
                 } else {
                     tagsItem = tags.getJSONObject(0);

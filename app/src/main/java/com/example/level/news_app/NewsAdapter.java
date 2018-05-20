@@ -77,7 +77,7 @@ public class NewsAdapter extends ArrayAdapter<News> {
         TextView authorTextView = (TextView) listItemView.findViewById(R.id.author);
 
         //Get the beginning of the article
-        String author = currentNews.getAuthor();
+        String author = "by" + currentNews.getAuthor();
 
         //Set the header.
         authorTextView.setText(author);
